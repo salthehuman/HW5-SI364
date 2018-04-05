@@ -1,0 +1,12 @@
+<form method="POST" action="/update/{{ item }}">
+	{{ form.hidden_tag() }}
+	{{ form.new_prior.label }} {{ form.new_prior() }}
+	{{ form.submit() }}
+</form>
+
+<div>
+{% for messages in get_flashed_messages() %}
+{{ message }}
+{% endfor %}
+</div>
+
